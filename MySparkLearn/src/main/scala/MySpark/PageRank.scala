@@ -27,7 +27,7 @@ object SparkPageRank extends LoadData{
       .map(x => (x._1, (1.0, x._2.toList)))
     // (/m/05tfn1,(1.0,List(/m/0dgrmp, /m/02_j1w, /m/0dgrmp, /m/02nzb8, /m/02sdk9v, /m/02nzb8, /m/02_j1w)))
 
-    for(i <- 1 to 100) {
+    for(i <- 1 to 50) {
       data = data.flatMap(x => x._2._2.map(y => (y, (x._2._1 / x._2._2.size, x._1))))
         .groupByKey()
         .mapValues(_.map(_._1).sum)
