@@ -1,0 +1,9 @@
+特征名称,解释,重命名
+MedInc,地区内收入中位数,收入
+HouseAge,地区内房龄中位数,房龄
+AveRooms,地区内每个房子的房间数平均值,房间数
+AveBedrms,地区内每个房子的卧室数量平均值,卧室数
+Population,地区内的人口数量,总人口
+AveOccup,地区内每个家庭的平均人数,户人口
+Latitude,地区的纬度,纬度
+Longitude,地区的经度,经度
